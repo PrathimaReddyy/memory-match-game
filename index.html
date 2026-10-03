@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Match</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <div class="title-section">
+            <h1>🧠 Memory Match</h1>
+            <p>Flip. Remember. Match.</p>
+        </div>
+
+        <!-- Difficulty -->
+
+        <div class="difficulty">
+
+            <button class="difficulty-btn active" data-level="easy">
+                Easy
+            </button>
+
+            <button class="difficulty-btn" data-level="medium">
+                Medium
+            </button>
+
+            <button class="difficulty-btn" data-level="hard">
+                Hard
+            </button>
+
+        </div>
+
+        <!-- Stats -->
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <span>Moves</span>
+                <strong id="moves">0</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>Pairs</span>
+                <strong id="pairs">0/6</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>Time</span>
+                <strong id="timer">0s</strong>
+            </div>
+
+        </div>
+
+        <!-- Game Board -->
+
+        <div id="game-board"></div>
+
+        <!-- Restart -->
+
+        <button id="restart">
+            ↻ New Game
+        </button>
+
+        <p id="best-score"></p>
+
+    </main>
+
+
+    <!-- WIN SCREEN -->
+
+    <div id="win-screen" class="hidden">
+
+        <div class="win-box">
+
+            <div class="trophy">🏆</div>
+
+            <h2>You did it!</h2>
+
+            <p>You matched every pair.</p>
+
+            <div class="results">
+
+                <div>
+                    <span>Moves</span>
+                    <strong id="final-moves">0</strong>
+                </div>
+
+                <div>
+                    <span>Time</span>
+                    <strong id="final-time">0s</strong>
+                </div>
+
+            </div>
+
+            <button id="play-again">
+                🎮 Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
